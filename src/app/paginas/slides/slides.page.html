@@ -1,0 +1,11 @@
+<ion-header>
+  <app-header titulo="Slides"></app-header>
+</ion-header>
+
+<ion-content padding>
+<ion-slides pager="true">
+  <ion-slide *ngFor="let slide of slider">
+    <img [src]="slide.image" >
+  </ion-slide>
+</ion-slides>
+</ion-content>

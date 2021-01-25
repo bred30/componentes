@@ -36,6 +36,21 @@ componente:Componente[]=[
     icono:'albums-outline',
     nombre:'Botones',
     direccion: '/buttons',
+  },
+  {
+    icono:'accessibility-outline',
+    nombre:'Avatar',
+    direccion: '/avatar',
+  },
+  {
+    icono:'attach-outline',
+    nombre:'Cards',
+    direccion: '/cards',
+  },
+  {
+    icono:'heart-outline',
+    nombre:'Slides',
+    direccion: '/slides',
   }
 ]
   constructor() { }

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Avatar</ion-title>
+    <ion-buttons slot="end">
+      <ion-avatar >
+        <img src="assets/img/1.jpg" alt="bonita imagen">
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<!--<app-header titulo="avatar"></app-header>-->
+
+
+<ion-content>
+<ion-chip color="primary" mode="ios" outline="true">
+<ion-avatar>
+  <img src="assets/img/2.jpg" alt="">
+</ion-avatar>
+<ion-label>Mrage</ion-label>
+</ion-chip>
+<ion-list *ngFor="let item of avatar">
+  <ion-item>
+    <ion-avatar slot="end">
+      <img [src]="item.icono" alt="">
+    </ion-avatar>
+    
+    <ion-label>{{item.nombre}}</ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>
