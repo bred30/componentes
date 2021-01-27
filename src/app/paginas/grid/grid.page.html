@@ -1,0 +1,27 @@
+<app-header titulo="grid"></app-header>
+<ion-content>
+ <ion-grid fixed><!--fixed permite poner columnas a los costados para que no se vea muy pegado-->
+  <ion-row>
+   <!-- <ion-col size="1">uno</ion-col>
+    <ion-col size="1">dos</ion-col>
+    <ion-col size="6">tres</ion-col>
+    <ion-col size="4">cuatro</ion-col>
+    -->
+    <ion-col size="12" size-lg="3" size-md="4" size-sm="6" *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]">
+      <ion-card>
+        <ion-img src="assets/img/1.jpg"></ion-img>
+      </ion-card>
+
+      <ion-card-header>
+        <ion-card-subtitle>Por Fox</ion-card-subtitle>
+        <ion-card-title>Los simpsons</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Pariatur hic suscipit inventore sapiente,
+      </ion-card-content>
+    </ion-col>
+  </ion-row>
+ </ion-grid>
+</ion-content>

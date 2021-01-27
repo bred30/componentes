@@ -51,6 +51,26 @@ componente:Componente[]=[
     icono:'heart-outline',
     nombre:'Slides',
     direccion: '/slides',
+  },
+  {
+    icono:'albums-outline',
+    nombre:'checks',
+    direccion: '/check',
+  },
+  {
+    icono:'calculator-outline',
+    nombre:'Grid',
+    direccion: '/grid',
+  },
+  {
+    icono:'bookmarks-outline',
+    nombre:'Popover',
+    direccion: '/popover',
+  },
+  {
+    icono:'hand-left-outline',
+    nombre:'Toast',
+    direccion: '/toast',
   }
 ]
   constructor() { }

@@ -3,14 +3,18 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { IonicModule } from '@ionic/angular';
 
+import { PopComponent } from './pop/pop.component';
+
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    PopComponent
   ],
   exports:[
-    HeaderComponent
+    HeaderComponent,
+    PopComponent
   ],
   imports: [
     CommonModule,
