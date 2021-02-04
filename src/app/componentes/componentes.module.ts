@@ -4,17 +4,20 @@ import { HeaderComponent } from './header/header.component';
 import { IonicModule } from '@ionic/angular';
 
 import { PopComponent } from './pop/pop.component';
+import { PoverinfoComponent } from './poverinfo/poverinfo.component';
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    PopComponent
+    PopComponent,
+    PoverinfoComponent
   ],
   exports:[
     HeaderComponent,
-    PopComponent
+    PopComponent,
+    PoverinfoComponent
   ],
   imports: [
     CommonModule,

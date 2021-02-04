@@ -1,0 +1,20 @@
+<app-header titulo="listas reordenadas"></app-header>
+<ion-header>
+    <ion-toolbar><ion-buttons slot="start"><ion-back-button defaultHref="/"></ion-back-button></ion-buttons>
+    <ion-title>Reorder</ion-title>
+<ion-buttons slot="end"><ion-button (click)="reorderDisabled=!reorderDisabled">Toggle</ion-button></ion-buttons></ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-reorder-group [disabled]="reorderDisabled"
+                           (ionItemReorder)="doReorder($event)">
+          <ion-item *ngFor="let usuario of usuarios">
+              <ion-label>{{usuario}} </ion-label>
+              <ion-reorder slot="end">
+                  <ion-icon name="pizza-outline"></ion-icon>
+              </ion-reorder>
+          </ion-item>
+      </ion-reorder-group>
+    </ion-list>
+</ion-content>
